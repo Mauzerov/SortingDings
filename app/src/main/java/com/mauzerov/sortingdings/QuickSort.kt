@@ -28,7 +28,8 @@ class QuickSort : SortingAlgorithm {
 
             return quickSort(less) + equal + quickSort(greater)
         }
-        progress = 100
-        return quickSort(array)
+        return quickSort(array).also {
+            progress = 100
+        }
     }
 }
