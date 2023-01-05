@@ -28,8 +28,8 @@ class QuickSort : SortingAlgorithm {
 
             return quickSort(less) + equal + quickSort(greater)
         }
-        return quickSort(array).also {
-            progress = 100
-        }
+        val result = quickSort(array)
+        progress = 100
+        return result
     }
 }
